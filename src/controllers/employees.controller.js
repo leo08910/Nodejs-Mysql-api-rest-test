@@ -71,8 +71,8 @@ export const deleteEmployees = async (req, res) => {
 };
 
 export const updateEmployees = async (req, res) => {
-  const { id } = req.params; // Equivale a const id = req.params.id
-  const { name, salary } = req.body; // Equivale a const name = req.body.name, etc
+  const { id } = req.params; 
+  const { name, salary } = req.body; 
 
   try {
     const [result] = await pool.query(
